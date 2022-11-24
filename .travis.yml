@@ -2,6 +2,6 @@ os: osx
 osx_image: xcode14.0.1
 languaje: swift
 script: 
-  - xcodebuild clean build test -project Recap.xcodeproj -scheme "RecapTests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk macosx -destination "platform=macOS" ONLY_ACTIVE_ARCH=YES
-  - xcodebuild clean build test -project Recap.xcodeproj -scheme "RecapTests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,OS=16.0,name=iPhone 14" 
+	- xcodebuild clean build test -project Recap.xcodeproj -scheme "RecapTests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk macosx -destination "platform=macOS" ONLY_ACTIVE_ARCH=YES
+	- xcodebuild clean build test -project Recap.xcodeproj -scheme "RecapTests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,OS=16.0,name=iPhone 14" 
 ONLY_ACTIVE_ARCH=YES
